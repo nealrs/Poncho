@@ -1,13 +1,13 @@
 {
   "name": "Poncho",
   "description": "Poncho is the world's BEST personalized weather forecast - now in your browser!",
-  "version": "1.1",
+  "version": "1.1.1",
   "author": "Neal Shyam",
   "permissions": [
     "activeTab"
   ],
   "icons": { 
-    "48": "icon48.png",
+    "48": "icon_48.png",
     "128": "icon_128.png" },
   "browser_action": {
       "default_title": "Poncho says...",

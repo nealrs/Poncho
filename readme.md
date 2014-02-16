@@ -1,6 +1,6 @@
 **The Poncho Chrome Extension**
 
-[Poncho]() is the world's BEST personalized weather service. And now it's only a click away in your browser!
+[Poncho](http://www.poncho.is) is the world's BEST personalized weather service. And now it's only a click away in your browser!
 
 ![Poncho Chrome extension screenshot ](ext.png "Poncho in your browser!")
 

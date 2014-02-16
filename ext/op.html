@@ -1,0 +1,648 @@
+
+<!DOCTYPE html>
+
+<!-- for email: -->
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"> -->
+<!-- end for email -->
+
+<!--[if lt IE 7]> <html class="ie ie6 lte9 lte8 lte7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="ie ie7 lte9 lte8 lte7" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="ie ie8 lte9 lte8" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="ie ie9 lte9" lang="en"> <![endif]-->
+<!--[if gt IE 9]> <html> <![endif]-->
+<!--[if !IE]><!--> <html> <!--<![endif]-->
+
+
+<head>
+    <title>Get ready for Poncho!</title>
+    
+    <script type="text/javascript" src="options.js"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- <meta name="viewport" content="width=320, target-densitydpi=device-dpi"> -->
+    <meta name="viewport" content="width = device-width, initial-scale = 1, user-scalable = yes"/>
+    <style type="text/css">
+
+	    body { font-size: 10px; background-color: #f1f1f1; }
+
+	    /* Client-specific Styles */
+	    #outlook a { padding: 0; }  /* Force Outlook to provide a "view in browser" button. */
+	    .ReadMsgBody { width: 100%; }
+	    .ExternalClass { width: 100%; display:block !important; } /* Force Hotmail to display emails at full width */
+
+		/* Reset Styles */
+		body { margin: 0; padding: 0; }
+		img { outline: none; text-decoration: none; display: block; border:none;}
+		br, strong br, b br, em br, i br { line-height: 100%; }
+		h1, h2, h3, h4, h5, h6 { line-height: 100% !important; -webkit-font-smoothing: antialiased; margin: 0; padding: 0; }
+		a, a:visited { color: #7374ad !important; }
+		a:active, a:hover { color: #8E8FD1 !important; }
+		table { margin: 0 auto; border: none; }
+		table td, table tr { background: none; }
+		ul, ul li { list-style-type: none; padding: 0; -webkit-padding-start: 0; -webkit-margin-before: 0; -webkit-margin-after: 0; }
+		.yshortcuts, .yshortcuts a, .yshortcuts a:link,.yshortcuts a:visited, .yshortcuts a:hover, .yshortcuts a span { color: black; text-decoration: none !important; border-bottom: none !important; background: none !important;}   /* Body text color for the New Yahoo.  This example sets the font of Yahoo's Shortcuts to black. */
+		/* This most probably won't work in all email clients. Don't include code blocks in email. */
+		code { white-space: normal; word-break: break-all; }
+
+		/* Fonts and Content */
+		body, td { font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif; }
+
+		/* CUSTOM STYLES */
+		/* Default */
+		p { font-size: 1.6em; line-height: 1.4em; }
+
+
+		.msginput {
+		    height:30px;
+		    /*width:286px;*/
+		    -moz-border-radius: 4px;
+		    -webkit-border-radius: 4px;
+		    border-radius: 4px;
+		    -moz-background-clip: padding;
+		    -webkit-background-clip: padding-box;
+		    background-clip: padding-box;
+		    border: 1px solid #cccccc;
+		    padding:0 10px;
+		}	
+		.subheader {
+			text-transform: uppercase;
+			font-size: 1.4em;
+			font-family: Arial, sans-serif;
+			color: #777777;
+			text-align: center;
+		}
+		.hr-bottom {
+			border-bottom: 1px solid #cccccc;
+		}
+		.vr-right {
+			border-right: 1px solid #cccccc;
+		}
+		.list-inline li {
+			display: inline;
+		}
+		.media {
+			width: 360px;
+			margin: 0 auto;
+		}
+		.media img {
+			width: 100% !important;
+			margin: 0 auto;
+		}
+		.square {
+			position: relative;
+			display: inline-block;
+			font-size: 1.6em !important;
+			font-weight: bold;
+			text-transform: uppercase;
+			text-align: center;
+			padding: 12px !important;
+		}
+		.suspended, .no {
+			background: #ed4b48;
+			padding: 12px;
+			color: #ffffff;
+		}
+		.in-effect, .yes {
+			background: #67c96c;
+			padding: 12px !important;
+			color: #ffffff;
+		}
+		.circle-lg {
+			color: #fff;
+			text-align: center;
+			font-size: 1.8em !important;
+			text-transform: uppercase;
+			font-weight: bold;
+			display: inline-block;
+			height: 60px;
+			width: 60px;
+			line-height: 60px;
+			border-radius: 30px;
+		}
+		.circle-sm {
+			color: #fff;
+			text-align: center;
+			font-size: 12px;
+			text-transform: uppercase;
+			font-weight: bold;
+			display: inline-block;
+			height: 12px;
+			width: 12px;
+			line-height: 12px;
+			border-radius: 24px;
+			padding: 6px;
+		}
+		.error {
+			background-color: #ed4b48;
+			position: absolute;
+			font-size: 15px;
+		}
+		.ok {
+			font-family: TimesNewRoman, "Times New Roman", Times, serif;
+			background-color: #00A20D;
+			position: absolute;
+		}
+		.square .error,
+		.square .ok {
+			bottom: -10px;
+			left: -10px;
+		}
+		.suspended.square .error {
+			bottom: -12px;
+			left: -12px;
+		}
+		.circle-lg .error,
+		.circle-sm .error,
+		.circle-lg .ok,
+		.circle-sm .ok {
+			bottom: -3px;
+			left: -3px;
+		}
+		.button {
+			display: inline-block;
+			background-color: #1CA0D1;
+			line-height: 1.2em;
+			border-radius: .6em;
+			padding: 10px;
+			margin-top: 0;
+		}
+		.button:hover {
+			background-color: #0080a8;
+		}
+		.button a, .button a:active, .button a:visited, .button a:hover {
+			color: #FFFFFF !important;
+			text-decoration: none;
+		}
+		.float-r {
+			float: right;
+		}
+
+		/* COLORS */
+		.red-bkgd { background-color: #ed4b48; }
+		.high { background-color: #EA8078; }
+		.orange-bkgd, .med { background-color: #ea9924; }
+		.yellow-bkgd, .low { background-color: #f7f292; color: #555555;}
+		.sky-blue-bkgd { background-color: #CBF0F4; color: #555555;}
+		.lt-blue-bkgd { background-color: #67BDC6; color: #ffffff; }
+		.lt-green-bkgd {background-color: #67c96c; }
+		.lt-grey-bkgd { background-color: #f1f1f1; }
+		.dk-grey-bkgd { background-color: #C4C6C7; }
+		.dk-blue-bkgd { background-color: #2F7AB2; }
+
+		/* WEB-VERSION */
+		.web-version { text-align: center; margin: 16px auto; }
+		.web-version a { text-decoration: underline; color: #666; font-size: 11px; font-family: Arial, sans-serif; }
+		.web-version a:hover { color: #333; }
+
+		/* Bottom-bar */
+		#bottom-bar .header {
+			margin: 30px auto 8px;
+			padding-bottom: 12px;
+		}
+		#bottom-bar .subheader ul {
+			margin-top: 18px;
+		}
+		#bottom-bar .subheader {
+			font-size: 1.2em;
+		}
+
+		/* social-share */
+		.social-share {
+			overflow: auto;
+			float: right;
+			padding: 1.2em 3.0em 0 0;
+		}
+		.social-share li {
+			display: inline;
+		}
+		.social-share a {
+			text-decoration: none;
+		}
+
+		/* CARD */
+		.card {
+			margin-top: 2.2em;
+			position: relative;
+			color: #555555;
+			text-align: center;
+			-webkit-font-smoothing: antialiased;
+			border-bottom: 4px solid #dddddd;
+		}
+		.card .title h2 {
+			vertical-align: middle;
+			text-align: center;
+			padding: .8em 0;
+			font-family: Arial, sans-serif;
+			font-size: 1.8em;
+			line-height: 1.8em;
+			color: #777777;
+		}
+
+		/* Evening */
+		#evening .card .title {
+			background-color: #92ddef; /*dusky-blue*/
+		}
+		/* Afternoon */
+		#afternoon .card .title {
+			background-color: #bbf2dd; /* lt-seafoam-green */
+		}
+		/* Morning / Alert */
+		#morning .card .title,
+		.alert .card {
+			background-color: #FCEC56; /* lt-yellow*/
+		}
+		.card .title img,
+		.card .share img {
+			display: inline-block;
+		}
+		.card .share {
+			position: absolute;
+			right: 2.0em;
+			top: 1.6em;
+		}
+		.card .content {
+			padding: 3.0em !important;
+			background-color: #ffffff;
+		}
+		.card .content h3 {
+			font-size: 1.8em;
+			font-weight: bold;
+			margin: 0;
+		}
+		.card .content h4 {
+			text-transform: uppercase;
+			font-size: 1.6em !important;
+			font: Arial, sans-serif;
+			margin-top: 1.4em !important;
+			font-weight: normal;
+		}
+		.content .body {
+			font-size: 1.6em;
+			margin-top: .5em;
+			margin-bottom: 0;
+			-webkit-margin-after: 0;
+		}
+		.card .more {
+			margin-top: 14px;
+			float: right;
+			font-size: 1.2em;
+			font-weight: bold;
+		}
+
+		/* FOOTER */
+		#footer {
+			margin: 20px auto;
+			text-align: center;
+		}
+		#footer li {
+			display: inline-block;
+			float: none;
+		}
+		.footer-content-left { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; text-transform: uppercase; }
+		/* Prevent Webkit and Windows Mobile platforms from changing default font sizes on header and footer. */
+		.footer-content-left a,
+		#footer p {
+			color: #777777;
+			font-size: 1.2em;
+			line-height: 1.2;
+		}
+		#footer { margin: 20px auto; color: #ededed; }
+		#footer, #footer a, #footer a:visited {
+			color: #777777 !important;
+		}
+		#footer a:hover {
+			color: #515151 !important;
+		}
+
+		/* good-morning / good-evening / good-afternoon */
+				/* Logo */
+		#good-morning h1 a,
+		#good-evening h1 a,
+		#good-afternoon h1 a {
+			-webkit-font-smoothing: antialiased;
+			font-weight: bold;
+			color: #ffffff;
+			text-decoration: none;
+		}
+		#good-morning h1 .logo,
+		#good-evening h1 .logo,
+		#good-afternoon h1 .logo {
+			display: inline-block;
+		}
+		#good-morning .content .header,
+		#good-evening .content .header,
+		#good-afternoon .content .header {
+			text-transform: uppercase;
+		}
+		#good-morning .media,
+		#good-evening .media,
+		#good-afternoon .media {
+			width: 100%;
+			margin-top: 1.4em !important;
+		}
+		#good-morning .card,
+		#good-evening .card,
+		#good-afternoon .card {
+			margin-top: 0;
+		}
+
+		/* Temp */
+		#temperature .content {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		#temperature .content .media {
+			width: 88px;
+			margin: 0 auto;
+			vertical-align: top;
+		}
+		#temperature .title h2 {
+			padding-left: 3em;
+			padding-right: 3em;
+		}
+		#temperature .content h3 {
+			font-size: 4.0em;
+			font-weight: bold;
+			font: Arial, sans-serif;
+			margin-top: 14px !important;
+			margin-bottom: 0 !important;
+			line-height: 1em !important;
+		}
+		#temperature .content h3 span {
+			line-height: 1em;
+		}
+		#temperature .content .min {
+			color: #999999;
+			font-size: .8em;
+		}
+		#temperature .content small {
+			font-size: .8em !important;
+		}
+		#temperature .unit {
+			float: right;
+			padding: .6em 30px 0 0;
+			font-size: 1.6em;
+		}
+
+		/* COMMUTE */
+		#commute p {
+			font-size: 1.6em !important;
+			line-height: 1.4 !important;
+		}
+		#commute p span {
+			font-size: inherit !important;
+		}
+
+		#commute .square,
+		#commute .circle-lg {
+			display: inline-block;
+			margin: 8px 4px !important;
+			position: relative;
+		}
+		#commute .square {
+			margin-right: 8px !important;
+			margin-left: 8px !important;
+		}
+		#commute .square .error,
+		#commute .square .ok {
+			bottom: -4px;
+		}
+		#commute .circle-lg {
+			font-size: 3.0em !important;
+			font-family: Arial, sans-serif;
+			font-weight: bold;
+			color: #ffffff;
+			height: 60px !important;
+			width: 60px !important;
+			line-height: 60px !important;
+			border-radius: 30px !important;
+		}
+
+		/* wind */
+		#wind .square {
+			text-transform: none;
+			font-size: 1.8em !important;
+		}
+
+		/* parking */
+		#parking .asp-wrapper {
+			width: 100% !important;
+		}
+
+		/* pollen */
+		#pollen .circle-lg {
+			font-size: 2em !important;
+			height: 3em !important;
+			min-height: 3em !important;
+			width: 3em !important;
+			line-height: 3em !important;
+			border-radius: 1.5em !important;
+		}
+
+		/* follow-us */
+		#follow-us .content a {
+			display: inline-block;
+		}
+		#follow-us .content img {
+			display: inline-block;
+			margin: 0 10px;
+		}
+
+		/* larger than mobile */
+		@media (min-width: 612px)  {
+			body { font-size: 10px; }
+
+			#morning .content .button,
+			#evening .content .button,
+			#afternoon .content .button {
+				font-size: 1.4em !important;
+			}
+
+			.social-share {
+				padding-top: 1.6em !important;
+			}
+
+			.social-share img {
+				width: 25px !important;
+				height: 25px !important;
+			}
+		}
+
+		/* iPhone 4/5 Retina Display (960x640 326ppi) */
+		/*@media screen and (max-width: 640px) and (resolution: 326dpi) {}*/
+
+		/* smartphone landscape (iPhone: 480x320 163ppi) */
+		@media (max-width: 611px) {
+			body {
+				width: 100% !important;
+				font-size: 10px;
+				margin: 0 auto;
+				padding: 0;
+			}
+			.w612 {
+				width: 100% !important;
+			}
+			.wrapper {
+				-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+				-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+				box-sizing: border-box;         /* Opera/IE 8+ */
+				overflow: hidden;
+				padding: 0 20px !important;
+			}
+			.card .content {
+				padding: 2.0em !important;
+			}
+			.card .content h4,
+			.card .content h4 span {
+				font-size: 1.2em !important;
+			}
+			.card .title img {
+				height: 16px !important;
+			}
+			.media img {
+				width: 80% !important;
+				margin: 0 auto;
+			}
+			#temperature .title h2 {
+				padding-left: 3em !important;
+				padding-right: 3em !important;
+			}
+			#temperature .content h3 {
+				font-size: 2.8em !important;
+			}
+			#temperature .content h3 span {
+				font-size: .6em !important;
+			}
+			#temperature .content .media {
+				width: 76% !important;
+			}
+			#temperature .unit {
+				padding-top: .4em;
+			}
+			#commute .square,
+			#commute p,
+			#wind .square {
+				font-size: 1.2em !important;
+				padding: .8em !important;
+			}
+			#parking .in-effect,
+			#parking .suspended {
+				font-size: 1.4em !important;
+				padding: .8em !important;
+			}
+			#parking .asp-wrapper {
+				width: 95% !important;
+				min-width: 16em !important;
+			}
+			#commute .circle-lg {
+				height: 2em !important;
+				width: 2em !important;
+				line-height: 2em !important;
+				border-radius: 1em !important;
+				font-size: 2em !important;
+			}
+			#pollen .circle-lg {
+				height: 4em !important;
+				min-height: 4em !important;
+				width: 4em !important;
+				line-height: 4em !important;
+				border-radius: 2em !important;
+				font-size: 1.2em !important;
+			}
+			#follow-us .content img {
+				width: 35px;
+				height: 35px;
+			}
+			#footer .footer-content-left a {
+				font-size: 1.2em !important;
+			}
+		}
+
+		/* misc media query for mobile max-width: 560 */
+		@media (max-width: 560px) {
+			#parking .w33 {
+				width: 100% !important;
+			}
+			#parking .asp-wrapper {
+				min-width: 14em !important;
+				width: 100% !important;
+			}
+		}
+
+		/* misc media query for mobile max-width: 500 */
+		@media (max-width: 500px) {
+			#parking .asp-wrapper {
+				width: 100% !important;
+			}
+		}
+
+	</style>
+<!--[if gte mso 9]>
+<style _tmplitem="124">
+	ol, ul {
+	   margin: 0;
+	   padding: 0;
+	   list-style-position: inside;
+	}
+</style>
+<![endif]-->
+</head>
+<body id="morning" style=" -webkit-text-size-adjust:none; -webkit-font-smoothing: antialiased; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;">
+    <table class="lt-grey-bkgd" width="100%" cellpadding="0" cellspacing="0" border="0">
+       <tbody>
+            <tr>
+                <td align="center">
+                    <table class="wrapper w612" width="612" cellpadding="0" cellspacing="0" border="0" style="margin:0 auto; width: 612px; padding: 0 20px;">
+                        <tbody>
+                            <tr>
+                            	<td class="w612" width="612" height="20" bgcolor="#ffffff"></td>
+                            </tr>
+                            <tr>
+                                <td id="good-morning" class="w612" width="612" align="center" bgcolor="#FFFFFF">
+                                    <table class="card w612" width="612" cellpadding="0" cellspacing="0" border="0">
+                                        <tbody>
+                                            <tr>
+                                            	<td class="w612" width="612" style="background-color: #FCEC56;">
+                                					<h1>
+                                						<a href="http://poncho.is" style="display: inline-block; text-align: center; padding: .3em 0; vertical-align: middle;">
+                                							<img class="logo" src="https://s3.amazonaws.com/s3.poncho.is/static/assets/images/email/poncho-avatar-circle.png" alt="Poncho: The World's BEST Personalized Weather Service" title="Poncho: The World's BEST Personalized Weather Service" width="75" height="75" style="display: inline-block;">
+                                						</a>
+                                					</h1>
+				                                </td>
+                                        	</tr>
+                                            <tr>
+                                            	<td class="content w612" width="612">
+                                            		<h3 class="header">Let's get this party started!</h3>
+
+                                            		<p class="body">Tell me your <a href="http://poncho.is/settings/" target="blank" title="This should be the part of the URL after '?ref='">referral id</a> and we're a go.<br/><br/>
+                                            		
+                                            		<input class = "msginput" type="text" id="refid" placeholder="mine is is 7ZZrr">
+
+													<button class = "msginput" id ="savebut" style="background-color: #67BDC6; border: 0px; color:#FFF; font-size: 10px;">Save it!</button></p>
+
+													<p id = "savemsg">
+														<p id = "msg" style="visibility:hidden;"><strong>Awesome sauce! Click the Poncho button on the top right.</strong></p>
+														<span id = "catbox" style="text-align:center; display:block;"></span>
+													</p>
+                                    
+                                            	</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- SPACER  -->
+                            <tr><td class="w612" width="612" height="60"></td></tr>
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+
+
+<html>

@@ -1,0 +1,17 @@
+{
+  "name": "Poncho",
+  "description": "Poncho is the world's BEST personalized weather forecast. It's not just about sms & email anymore. Bring the fun to your browser. Once you set your referral ID in the options page, you're personalized forecast is never be more than a click away!",
+  "version": "1.0",
+  "default_locale": "en",
+  "author": "Neal Shyam",
+  "permissions": [
+    "activeTab"
+  ],
+  "browser_action": {
+      "default_title": "Poncho says...",
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+  },
+  "options_page": "op.html",
+  "manifest_version": 2
+}

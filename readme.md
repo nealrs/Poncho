@@ -1,6 +1,6 @@
 **The Poncho Chrome Extension**
 
-[Poncho]() is the world's BEST personalized weather service. And now you can it's only a click away in your browser!
+[Poncho]() is the world's BEST personalized weather service. And now it's only a click away in your browser!
 
 ![Poncho Chrome extension screenshot ](ext.png "Poncho in your browser!")
 
@@ -10,9 +10,9 @@
 
 1. Follow these [instructions](https://developer.chrome.com/extensions/getstarted.html#unpacked).
 
-2. Open the options page and save your id. It's the part that comes after `?ref=` in your [referral link](http://poncho.is/settings).
+2. Open the options page and enter your id. It's the part that comes after `?ref=` in your [referral link](http://poncho.is/settings). Don't forget to save!
 
-3. Click on the Poncho icon in your toolbar
+3. Click on the Poncho icon in your toolbar.
 
 **Why?**
 

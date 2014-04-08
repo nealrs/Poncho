@@ -14,7 +14,7 @@ The script accepts two optional arguments:
 - a `-d` flag which suppresses the detailed weather description. 
 
 I also recommend aliasing it in your .zshrc / .bashrc:
-`p = "~/path/to/poncho.py <refcode>"`
+`p = "python ~/path/to/poncho.py <refcode>"`
 
 Default NYC forecast:
 

@@ -1,6 +1,6 @@
 ##Poncho.py
 
-[Poncho](http://www.poncho.is) is an awesome weather service incubated at Betaworks. A few months back I wrote a [Chrome extension](https://chrome.google.com/webstore/detail/poncho/ibfheadaidbgfdoignldjdjjanfdfkfh) to view my forecast without leaving my main work environment / picking up my phone.
+[Poncho](http://www.poncho.is) is an awesome weather service developed at Betaworks. A few months back I wrote a [Chrome extension](https://chrome.google.com/webstore/detail/poncho/ibfheadaidbgfdoignldjdjjanfdfkfh) to view my forecast without leaving my main work environment / picking up my phone.
 
 It worked really well, until I started spending more time in the console. That's when I remembered a post I wrote about [parsing HTML with BeautifulSoup](http://gitat.me/2013/09/26/Scrapin-Care-of-Business.html) and got to work.
 

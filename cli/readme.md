@@ -17,12 +17,15 @@ I also recommend aliasing it in your .zshrc / .bashrc:
 `p = "~/path/to/poncho.py <refcode>"`
 
 Default NYC forecast:
+
 ![forecast without referral code](no_ref.png "forecast without referral code")
 
 Forecast with referral code:
+
 ![forecast with referral code](w_detail.png "forecast with referral code")
 
 Forecast with referral code & suppressed detail:
+
 ![forecast with referral code & suppressed detail](no_detail.png "forecast with referral code & suppressed detail")
 
 I'd love to hear what you think about Poncho.py and please feel free to contribute & fork!

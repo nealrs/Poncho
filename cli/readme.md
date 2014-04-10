@@ -6,6 +6,8 @@ It worked really well, until I started spending more time in the console. That's
 
 **The end result is Poncho.py: the ultimate console-based weather forecast**
 
+![preview w /alias](https://dl.dropboxusercontent.com/s/funv16u0jx9a2n7/quickcast-compressed.mp4_C8OpcqMC.gif)
+
 *Dependencies: BeautifulSoup 4 & lxml parser*
 
 The script accepts two optional arguments: 

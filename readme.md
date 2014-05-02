@@ -8,7 +8,7 @@
 
 **Installation**
 
-1. Follow these [instructions](https://developer.chrome.com/extensions/getstarted.html#unpacked).
+1. Follow these [instructions](https://developer.chrome.com/extensions/getstarted.html#unpacked) or [install the extension form the Chrome Web Store](https://chrome.google.com/webstore/detail/poncho/ibfheadaidbgfdoignldjdjjanfdfkfh?hl=en)
 
 2. Open the options page and enter your id. It's the part that comes after `?ref=` in your [referral link](http://poncho.is/settings). Don't forget to save!
 
@@ -16,7 +16,7 @@
 
 **Why?**
 
-Uhm, why not? Everbody loves a fun hack (and cats)!
+Uhm, why not? Everybody loves a fun hack (and cats)!
 
 **Misc**
 
